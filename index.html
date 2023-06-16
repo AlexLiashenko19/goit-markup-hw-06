@@ -441,16 +441,16 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="modal-lineup">
-          <p class="p-modal">Leave your contacts and we will call you back</p>
-          <form class="modal-form">
+        <p class="p-modal">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="container-inp">
             <label for="user-name" class="backdrop-label">
               Name
-              <div class="input-container">
+              <div class="input-contauner">
                 <input
                   class="text-input"
                   type="text"
-                  name="name"
+                  name="user-name"
                   id="user-name"
                 />
                 <svg class="backdrop-paint" width="18" height="24">
@@ -458,9 +458,11 @@
                 </svg>
               </div>
             </label>
+          </div>
+          <div class="container-inp">
             <label for="user-name" class="backdrop-label">
               Phone
-              <div class="input-container">
+              <div class="input-contauner">
                 <input
                   class="text-input"
                   type="tel"
@@ -472,9 +474,11 @@
                 </svg>
               </div>
             </label>
+          </div>
+          <div class="container-inp">
             <label for="user-name" class="backdrop-label">
               Email
-              <div class="input-container">
+              <div class="input-contauner">
                 <input
                   class="text-input"
                   type="email"
@@ -486,27 +490,34 @@
                 </svg>
               </div>
             </label>
-
-            <label class="backdrop-label">
-              <span class="backdrop-name"> Comment </span>
+          </div>
+          <div class="area-container">
+            <label class="backdrop-label" for="user-comment">
+              Comment
               <textarea
+                id="user-comment"
                 class="backdrop-area"
-                name=""
+                name="user-commen"
                 rows="10"
                 placeholder="Text input"
               >
               </textarea>
-              <input class="visually-hidden" type="checkbox" id="click" />
-              <label for="click">
-                <span class="backdrop-name">
-                  I accept the terms and conditions of the
-                  <a href="">Privacy Policy</a>
-                </span>
-              </label>
             </label>
-            <button type="submit" class="button">Send</button>
-          </form>
-        </div>
+          </div>
+          <div class="checkbox-container">
+            <input class="visually-hidden checked-inp" type="checkbox" id="user-privacy" name="user-privacy" value="true">
+            <label class="click" for="user-privacy">I accept the terms and conditions of the
+              <span class="click-spa">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-backdrop-Vector"></use>
+                </svg>
+              </span>
+                <a href="" class="checkbox-link">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="button">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
