@@ -773,7 +773,7 @@ body {
   color: var(--central-color);
 }
 
-.input-container {
+.container-inp {
   margin-bottom: 8px;  
 }
 
@@ -788,7 +788,7 @@ body {
   color: #8e8f99;;
 }
 
-.contauner-inp {
+.input-contauner {
   position: relative;
 }
 
