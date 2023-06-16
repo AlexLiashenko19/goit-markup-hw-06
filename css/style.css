@@ -877,7 +877,7 @@ body {
 
 }
 
-.checked-inp:checked + .click-spa {
+.checked-inp:checked + .click > .click-spa {
   background-color: var(--blue-color-back);
   border: none;
   fill: #F4F4FD;;
@@ -885,6 +885,7 @@ body {
 
 .checkbox-link {
   color: var(--button-color);
+  text-decoration: underline;
 }
 
 
