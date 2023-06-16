@@ -630,6 +630,7 @@ body {
   overflow: hidden;
 }
 
+/* portfolio card */
 .main-img {
   display: flex;
   justify-content: center;
@@ -643,10 +644,14 @@ body {
 
 .portfolio-link {
   display: block;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .overflow-box {
@@ -760,6 +765,7 @@ body {
 
 .p-modal {
   text-align: center;
+  margin-bottom: 16px;
 
   font-weight: 500;
   line-height: 1.5;
@@ -844,6 +850,7 @@ body {
 .checkbox-container {
   margin-bottom: 24px;
 }
+
 .click {
   font-size: 12px;
   line-height: 1.17;
