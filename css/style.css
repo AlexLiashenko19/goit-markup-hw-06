@@ -818,7 +818,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-paint:focus {
+.text-input:focus +.backdrop-paint {
   fill: var(--button-color);
 }
 
@@ -832,6 +832,7 @@ body {
 
   font-size: 12px;
   line-height: 1.17;
+  letter-spacing: 0.04em;
 
   background-color: transparent;
   outline: transparent;
